@@ -8,7 +8,8 @@
     "plugin:react/recommended", // React와 관련된 규칙입니다.
     "plugin:@typescript-eslint/recommended", //TypeScript와 관련된 ESLint 규칙입니다.
     "plugin:import/recommended", // 모듈 import에 관련된 규칙입니다.
-    "plugin:import/typescript" // 모듈 import에 관련된 규칙입니다.
+    "plugin:import/typescript", // 모듈 import에 관련된 규칙입니다.
+    "plugin:storybook/recommended" // Storybook 관련 규칙입니다.
   ],
   "rules": {
     "react/react-in-jsx-scope": "off" // 해당 규칙은 비활성화되어, JSX를 사용할 때 React를 import 할 필요가 없습니다.
