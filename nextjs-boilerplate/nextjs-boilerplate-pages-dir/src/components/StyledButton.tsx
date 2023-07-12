@@ -11,6 +11,11 @@ const variants = {
     backgroundColor: '#5AB203',
     border: 'none',
   },
+  error: {
+    color: '#ffffff',
+    backgroundColor: '#ea5555',
+    border: 'none',
+  },
   transparent: {
     color: '#111111',
     backgroundColor: 'transparent',
