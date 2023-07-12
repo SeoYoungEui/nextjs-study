@@ -4,26 +4,25 @@
     "next/core-web-vitals", //Next.js의 Core Web Vitals에 대한 규칙입니다.
     "next",
     "eslint:recommended", //ESLint의 기본 규칙입니다.
-    "plugin:prettier/recommended", //Prettier 코드 정리 도구와 관련된 규칙입니다.
+    // "plugin:prettier/recommended", //Prettier 코드 정리 도구와 관련된 규칙입니다.
     "plugin:react/recommended", // React와 관련된 규칙입니다.
     "plugin:@typescript-eslint/recommended", //TypeScript와 관련된 ESLint 규칙입니다.
-    "plugin:prettier/recommended",
     "plugin:import/recommended", // 모듈 import에 관련된 규칙입니다.
     "plugin:import/typescript" // 모듈 import에 관련된 규칙입니다.
   ],
   "rules": {
-    "react/react-in-jsx-scope": "off", // 해당 규칙은 비활성화되어, JSX를 사용할 때 React를 import 할 필요가 없습니다.
-    "prettier/prettier": [
-      //Prettier 코드 정리 도구의 설정입니다
-      "error",
-      {
-        "trailingComma": "all", // 자바사크립트는 배열, 객체등의 마지막 요소에 , 콤마가 붙는 것을 허용하고 있다. 콤마를 붙일지 말지 결정
-        "endOfLine": "auto",
-        "semi": false, // false를 설정하여 문장 끝에 세미콜론을 사용하지 않습니다.
-        "singleQuote": true, // true를 설정하여 문자열에 작은 따옴표를 사용합니다.
-        "printWidth": 80, // 한 줄의 최대 길이는 80 문자로 설정합니다.
-        "tabWidth": 2 // 들여쓰기에 사용되는 공백의 너비를 2로 설정합니다.
-      }
-    ]
+    "react/react-in-jsx-scope": "off" // 해당 규칙은 비활성화되어, JSX를 사용할 때 React를 import 할 필요가 없습니다.
+    // "prettier/prettier": [
+    //   //Prettier 코드 정리 도구의 설정입니다
+    //   "error",
+    //   {
+    //     "trailingComma": "all", // 자바사크립트는 배열, 객체등의 마지막 요소에 , 콤마가 붙는 것을 허용하고 있다. 콤마를 붙일지 말지 결정
+    //     "endOfLine": "auto",
+    //     "semi": false, // false를 설정하여 문장 끝에 세미콜론을 사용하지 않습니다.
+    //     "singleQuote": true, // true를 설정하여 문자열에 작은 따옴표를 사용합니다.
+    //     "printWidth": 80, // 한 줄의 최대 길이는 80 문자로 설정합니다.
+    //     "tabWidth": 2 // 들여쓰기에 사용되는 공백의 너비를 2로 설정합니다.
+    //   }
+    // ]
   }
 }
