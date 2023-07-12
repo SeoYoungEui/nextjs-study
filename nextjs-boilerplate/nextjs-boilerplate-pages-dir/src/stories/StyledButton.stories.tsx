@@ -10,31 +10,31 @@ export default meta
 
 type Story = StoryObj<typeof StyledButton>
 
-export const Primary = (props: StyledButtonProps) => {
-  return (
+export const Primary: Story = {
+  render: (props: StyledButtonProps) => (
     <StyledButton {...props} variant='primary'>
       Primary
     </StyledButton>
-  )
+  ),
 }
-export const Success = (props: StyledButtonProps) => {
-  return (
+export const Success: Story = {
+  render: (props: StyledButtonProps) => (
     <StyledButton {...props} variant='success'>
       Success
     </StyledButton>
-  )
+  ),
 }
-export const Error = (props: StyledButtonProps) => {
-  return (
-    <StyledButton {...props} variant='error'>
+export const Error: Story = {
+  render: (props: StyledButtonProps) => (
+    <StyledButton {...props} variant='primary'>
       Error
     </StyledButton>
-  )
+  ),
 }
-export const Transparent = (props: StyledButtonProps) => {
-  return (
+export const Transparent: Story = {
+  render: (props: StyledButtonProps) => (
     <StyledButton {...props} variant='transparent'>
       Transparent
     </StyledButton>
-  )
+  ),
 }
