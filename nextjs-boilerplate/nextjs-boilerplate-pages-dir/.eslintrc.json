@@ -12,7 +12,7 @@
     "plugin:storybook/recommended" // Storybook 관련 규칙입니다.
   ],
   "rules": {
-    "react/react-in-jsx-scope": "off" // 해당 규칙은 비활성화되어, JSX를 사용할 때 React를 import 할 필요가 없습니다.
+    "react/react-in-jsx-scope": "off", // 해당 규칙은 비활성화되어, JSX를 사용할 때 React를 import 할 필요가 없습니다.
     // "prettier/prettier": [
     //   //Prettier 코드 정리 도구의 설정입니다
     //   "error",
@@ -25,5 +25,6 @@
     //     "tabWidth": 2 // 들여쓰기에 사용되는 공백의 너비를 2로 설정합니다.
     //   }
     // ]
+    "react/no-unknown-property": [2, { "ignore": ["jsx"] }]
   }
 }
