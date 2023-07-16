@@ -23,21 +23,20 @@ const variants = {
   },
 } as const
 
-export type StyledButtonProps = {
+export interface StyledButtonProps {
   variant: keyof typeof variants
+  label: string
+  size?: 'small' | 'medium' | 'large'
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
-  ${({ variant }) => {
-    const style = variants[variant]
-
+  ${({ variant }: { variant: keyof typeof variants }) => {
     return css`
-      color: ${style.color};
-      background-color: ${style.backgroundColor};
-      border: ${style.border};
+      color: ${variants[variant].color};
+      background-color: ${variants[variant].backgroundColor};
+      border: ${variants[variant].border};
     `
   }}
-
   border-radius: 12px;
   font-size: 14px;
   height: 38px;
