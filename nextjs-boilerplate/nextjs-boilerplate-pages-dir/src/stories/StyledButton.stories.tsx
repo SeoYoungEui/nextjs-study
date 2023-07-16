@@ -8,16 +8,17 @@ const meta: Meta<typeof StyledButton> = {
   argTypes: {
     variant: {
       control: {
-        type: 'select',
-        options: ['primary', 'success', 'error', 'transparent'],
+        type: 'radio',
       },
+      options: ['primary', 'success', 'error', 'transparent'],
     },
     size: {
       control: {
-        type: 'select',
-        options: ['small', 'medium', 'large'],
+        type: 'radio',
       },
+      options: ['small', 'medium', 'large'],
     },
+    onClick: { action: 'clicked' },
   },
 }
 

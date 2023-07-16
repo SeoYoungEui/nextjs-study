@@ -27,6 +27,7 @@ export interface StyledButtonProps {
   variant: keyof typeof variants
   label: string
   size?: 'small' | 'medium' | 'large'
+  onClick?: () => void
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
