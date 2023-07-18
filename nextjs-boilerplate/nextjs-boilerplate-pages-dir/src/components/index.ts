@@ -1,4 +1,4 @@
-import { StyledButton, StyledButtonProps } from './StyledButton'
+import { StyledButton, StyledButtonProps } from './Button'
 
 export { StyledButton }
 export type { StyledButtonProps }
