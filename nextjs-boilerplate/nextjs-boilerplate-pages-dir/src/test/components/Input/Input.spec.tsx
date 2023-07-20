@@ -1,4 +1,4 @@
-import { Input } from '@/components/Input'
+import { Input } from '@/components/TestComponents/Input'
 import { RenderResult, fireEvent, render, screen } from '@testing-library/react'
 
 /**
